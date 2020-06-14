@@ -3,14 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <meta name="theme-color" content="#ededed">
+  <meta name="theme-color" content="#477E99">
   <link rel="icon" href="">
   <link rel="stylesheet" href="styles.css" type="text/css">
   <title>Product Landing Page</title>
 </head>
 <body>
 
-  <h1>hello</h1>
+  <header id="header">
+    <div id="product-info">
+      <img src="assets/qnap-logo-black.svg" alt="QNAP company logo" id="header-img">
+      <h3>TS-253B</h3>
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#product-features" class="nav-link">Features</a></li>
+        <li><a href="#product-snapshot" class="nav-link">Snapshot</a></li>
+        <li><a href="#video-container" class="nav-link">How It Works</a></li>
+        <li><a href="#product-gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#product-warranty" class="nav-link">Warranty</a></li>
+        <li><a href="#" class="nav-link">Buy</a></li>
+      </ul>
+    </nav>
+  </header>
   
+  <main>
+
+    <div id="top"></div>
+
+    <div id="welcome">
+      <div class="welcome-text">
+        <h1>QNAP TS-253B</h1>
+        <p>Quad-Core Network Attached Storage</p>
+      </div>
+      <div class="welcome-image">
+        <img src="assets/gallery/3.png" alt="TS-253B with its media controller">
+      </div>
+      <div class="welcome-badges">
+        <img src="assets/badges/269_2.png" alt="HDMI badge">
+        <img src="assets/badges/269_3.png" alt="Ultra HD badge">
+        <img src="assets/badges/269_4.png" alt="Intel Celeron badge">
+        <img src="assets/badges/269_5.png" alt="DLNA badge">
+        <img src="assets/badges/Microsoft_Azure_Certified.png" alt="Microsoft Azure Certified badge">
+      </div>
+    </div>
+    
+    <div id="product-introduction">
+      <div class="intro-image">
+        <img src="assets/gallery/6.png" alt="TS-253B with its trays open">
+      </div>
+      <div class="intro-text">
+        <p>The TS-253B comes with a sleek new look, featuring an OLED panel and two capacitive touch buttons. The TS-253B also features a PCIe port for boosting the potential applications of your NAS: the QNAP QM2 expansion card can be installed for adding an M.2 SSD cache/10GbE connectivity, a compatible wireless card can be installed to use the TS-253B as a wireless access point, and a USB 3.2 Gen 2 card can be added for easier backup to/from multiple external storage devices. With a USB Type-C QuickAccess port and a SD card slot, the TS-253B simplifies transferring and sharing files without needing a network connection. The TS-253B also provides feature-rich multimedia functionality, such as 4K @30Hz video playback and real-time transcoding.</p>
+        <ul>
+          <li>PCIe port supports installing a QNAP QM2 dual-port M.2 SSD/10GbE connectivity, a compatible PCIe wireless adapter, or a USB 3.2 Gen 2 card</li>
+          <li>USB QuickAccess port for direct access to files on NAS without needing a network connection</li>
+          <li>Supports virtualization, centralized storage, backup, sharing, and disaster recovery</li>
+          <li>A hybrid approach to virtualization in one NAS: Virtualization Station and Container Station</li>
+          <li>Supports dual-channel 4K H.264 hardware decoding and on-the-fly or offline transcoding</li>
+          <li>IFTTT Agent enables web automation for improved working efficiency</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="product-features">
+      <h2>Features</h2>
+      <div>
+        <h3>Extend NAS functionality with the PCIe Slot</h3>
+        <img src="assets/features/pci_card-512.png" alt="pcie icon">
+      </div>
+      <div>
+        <h3>OLED panel with capacitive touch buttons</h3>
+        <img src="assets/features/39-512.webp" alt="touch button icon">
+      </div>
+      <div>
+        <h3>Directly access files with USB-C QuickAccess</h3>
+        <img src="assets/features/usb-c-512.png" alt="usb-c icon">
+      </div>
+      <div>
+        <h3>Data backup, recovery, and synchronization</h3>
+        <img src="assets/features/data-backup.png" alt="backup and sync icon">
+      </div>
+      <div>
+        <h3>Secure access with VPN & Proxy Server</h3>
+        <img src="assets/features/5447674-vpn-application-vpn-icon-with-png-and-vector-format-for-free-vpn-png-512_512_preview.png" alt="vpn icon">
+      </div>
+    </div>
+
+    <div id="product-snapshot">
+      <h2>Why is QNAP's snapshot support better?</h2>
+      <p>Snapshots are a must-have feature for modern storage systems. QNAP's snapshots help protect your folders, files, and iSCSI LUNs. In the event of malware attacks or unwanted changes, your stored data can be quickly reverted and restored to a specific point in time to ensure continuity.</p>
+      <p>Check out the difference between QNAP 's snapshot support compared to competitor products.</p>
+      <table>
+        <thead>
+          <th>Snapshot Application</th>
+          <th>QNAP</th>
+          <th>Competitors with BTRF</th>
+          <th>Other competitors</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Block-based iSCSI LUN<br>(Thick Provisioning and Thin Provisioning)</th>
+            <td><span>✔️</span></td>
+            <td><span>❌</span></td>
+            <td><span>❌</span></td>
+          </tr>
+          <tr>
+            <th>File-based iSCSI LUN<br>(Thin Provisioning)</th>
+            <td><span>✔️</span><br>
+              <p>Protected by the volume snapshot, the process is done within seconds</p>
+            </td>
+            <td><span>❌</span></td>
+            <td><span>❌</span></td>
+          </tr>
+          <tr>
+            <th>File-based iSCSI LUN<br>(Thick Provisioning)</th>
+            <td><span>✔️</span><br>
+              <p>Protected by the volume snapshot, the process is done within seconds</p>
+            </td>
+            <td><span>✔️</span></td>
+            <td><span>❌</span></td>
+          </tr>
+          <tr>
+            <th>Volume<br>(Multiple Folders)</th>
+            <td><span>✔️</span></td>
+            <td><span>❌</span></td>
+            <td><span>❌</span></td>
+          </tr>
+          <tr>
+            <th>Shared Folder</th>
+            <td><span>✔️</span><br>
+              <p>With Snapshot Shared Folder	</p>
+            </td>
+            <td><span>✔️</span></td>
+            <td><span>❌</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="video-container">
+      <h2>See how it works</h2>
+      <iframe id="video" width="1903" height="800" src="https://www.youtube.com/embed/HrE7_FSsDKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="gallery">
+      <img src="assets/gallery/1.png" alt="QNAP TS-253B product shot">
+      <img src="assets/gallery/4.png" alt="QNAP TS-253B product shot">
+      <img src="assets/gallery/7.png" alt="QNAP TS-253B product shot">
+      <img src="assets/gallery/9.png" alt="QNAP TS-253B product shot">
+      <img src="assets/gallery/8.png" alt="QNAP TS-253B product shot">
+      <img src="assets/gallery/5.png" alt="QNAP TS-253B product shot">
+    </div>
+
+    <div id="product-warranty">
+      <img src="assets/warranty-img_for_old.png" alt="QNAP 5-years warranty artwork">
+      <div>
+        <h2>Extend hardware warranty up to 5 years</h2>
+        <p>The TS-253B is backed by a 2-year warranty at no extra cost. If needed, you can purchase a warranty extension that increases your coverage up to 5 years.</p>
+      </div>
+    </div>
+  </main>
+
+  <aside>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <h2>Sign up for our newsletter</h2>
+      <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+      <input type="submit" value="Get yours now!" id="submit">
+    </form>
+  </aside>
+
+  <footer>
+    <p>&copy; Copyright 2020 <span>|</span> Webpage mady by SepSol</p>
+    <p>This is a mock product landing page, inspired by one of QNAP products.</p>
+  </footer>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
