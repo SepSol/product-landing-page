@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta name="theme-color" content="#477E99">
-  <link rel="icon" href="">
+  <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css" type="text/css">
   <title>Product Landing Page</title>
 </head>
 <body>
 
   <div id="top"></div>
+  <a id="to-top" href="#top">
+    <img src="assets/up-arrow-key.png" alt="up arrow">
+  </a>
 
   <header id="header">
     <div id="product-info">
@@ -23,8 +26,8 @@
         <li><a href="#video-container" class="nav-link">How It Works</a></li>
         <li><a href="#product-gallery" class="nav-link">Gallery</a></li>
         <li><a href="#product-warranty" class="nav-link">Warranty</a></li>
-        <li><a href="#" class="nav-link">Buy</a></li>
       </ul>
+      <a href="#" class="nav-link">Buy</a>
     </nav>
   </header>
   
@@ -138,7 +141,7 @@
 
     <div id="video-container">
       <h2>See how it works</h2>
-      <iframe id="video" width="1903" height="800" src="https://www.youtube.com/embed/HrE7_FSsDKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="video" src="https://www.youtube.com/embed/HrE7_FSsDKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div id="gallery">
@@ -160,15 +163,17 @@
   </main>
 
   <aside>
+    <h2>Sign up for our newsletter</h2>
     <form action="https://www.freecodecamp.com/email-submit" id="form">
-      <h2>Sign up for our newsletter</h2>
       <input type="email" name="email" id="email" placeholder="Enter your email address" required>
-      <input type="submit" value="Get yours now!" id="submit">
+      <br>
+      <input type="submit" value="Join" id="submit">
     </form>
   </aside>
 
   <footer>
     <p>&copy; Copyright 2020 <span>|</span> Webpage mady by SepSol</p>
+    <!-- <hr> -->
     <p>This is a mock product landing page, inspired by one of QNAP products.</p>
   </footer>
 

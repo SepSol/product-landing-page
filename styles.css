@@ -1,5 +1,6 @@
 :root {
   --primary-color: #477E99;
+  --primary-color-highlight: #5698b9;
 }
 
 @font-face {
@@ -13,6 +14,38 @@ body {
   height: 100%;
   margin: 0;
   /* overflow-x: hidden; */
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.5);
+  display: flex;
+  transition: 0.2s;
+}
+
+#to-top:hover {
+  background-color: var(--primary-color-highlight);
+}
+
+#to-top img {
+  width: 60%;
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  top: -2px;
 }
 
 header {
@@ -49,6 +82,20 @@ header #nav-bar ul li a {
   padding: 10px;
   color: #555;
   text-decoration: none;
+}
+
+header #nav-bar > a {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+
+header #nav-bar > a:hover {
+  background-color: var(--primary-color-highlight);
 }
 
 main .welcome-text * {
@@ -92,6 +139,7 @@ main #product-features {
 }
 
 main h2 {
+  margin-top: 20px;
   text-align: center;
   font-size: 1.7em;
 }
@@ -103,7 +151,6 @@ main #product-features .container {
 main #product-features .container div {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: ;
   align-items: center;
   margin-top: 20px;
 }
@@ -118,7 +165,7 @@ main #product-snapshot {
 }
 
 main #product-snapshot .table {
-  margin: 50px 25px;
+  margin: 50px 25px 60px;
   overflow-x: scroll;
 }
 
@@ -140,3 +187,91 @@ main #product-snapshot table tbody tr:nth-child(even) {
   background-color: #e5e5e5;
 }
 
+main #video-container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+main #video-container iframe {
+  width: 100%;
+}
+
+main #gallery {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main #gallery img {
+  width: 48%;
+}
+
+main #product-warranty img {
+  margin-top: 70px;
+  width: 100%;
+}
+
+main #product-warranty h2 {
+  margin: 0 25px;
+}
+
+aside {
+  margin-top: 60px;
+  padding: 60px 25px 70px;
+  text-align: center;
+  background-color: #ededed;
+}
+
+aside h2 {
+  margin: 0 0 15px;
+}
+
+aside form {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+aside form * {
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  /* border-radius: 5px; */
+  font-size: 0.9em;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+aside form input[type="email"] {
+  width: 80%;
+}
+
+aside form input[type="email"]:focus {
+  border-color: var(--primary-color);
+}
+
+aside form input[type="submit"] {
+  /* margin-top: 10px; */
+  border: 0;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+aside form input[type="submit"]:hover {
+  background-color: var(--primary-color-highlight);
+}
+
+footer {
+  padding: 10px 25px 20px;
+  font-size: 0.9em;
+  background-color: var(--primary-color);
+  color: #eaeaea
+}
