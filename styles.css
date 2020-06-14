@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #477E99;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+
+header {
+  width: 100%;
+}
+
+header #product-info {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+header #product-info img {
+  width: 45%;
+  margin: 10px;
+
+}
+
+header #nav-bar ul {
+  padding: 0;
+  margin: 50px 0 0;
+  background-color: #e0e0e0;
+}
+
+header #nav-bar ul li {
+  list-style-type: none;
+}
+
+header #nav-bar ul li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: #555;
+  text-decoration: none;
+}
+
+main {
+}
