@@ -19,16 +19,20 @@
     <div id="product-info">
       <img src="assets/qnap-logo-black.svg" alt="QNAP company logo" id="header-img">
     </div>
-    <nav id="nav-bar">
-      <ul>
-        <li><a href="#product-features" class="nav-link">Features</a></li>
-        <li><a href="#product-snapshot" class="nav-link">Snapshot</a></li>
-        <li><a href="#video-container" class="nav-link">How It Works</a></li>
-        <li><a href="#product-gallery" class="nav-link">Gallery</a></li>
-        <li><a href="#product-warranty" class="nav-link">Warranty</a></li>
-      </ul>
-      <a href="#" class="nav-link">Buy</a>
-    </nav>
+    <div class="dropdown-menu">
+      <input type="checkbox" id="menu">
+      <label for="menu">Menu</label>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#product-features" class="nav-link">Features</a></li>
+          <li><a href="#product-snapshot" class="nav-link">Snapshot</a></li>
+          <li><a href="#video-container" class="nav-link">How It Works</a></li>
+          <li><a href="#product-gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#product-warranty" class="nav-link">Warranty</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-link btn">Buy</a>
+    </div>
   </header>
   
   <main>
@@ -167,7 +171,7 @@
     <form action="https://www.freecodecamp.com/email-submit" id="form">
       <input type="email" name="email" id="email" placeholder="Enter your email address" required>
       <br>
-      <input type="submit" value="Join" id="submit">
+      <input type="submit" value="Join" id="submit" class="btn">
     </form>
   </aside>
 
