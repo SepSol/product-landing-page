@@ -160,7 +160,6 @@ main .welcome-badges {
   justify-content: center;
   flex-grow: 0;
   flex-shrink: 0;
-  width: 400px;
   margin: 0 auto;
 }
 
@@ -338,6 +337,9 @@ footer {
   header .dropdown-menu > a {
     top: 70px;
   }
+  main .welcome-badges {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -381,5 +383,5 @@ footer {
 }
 
 @media screen and (min-width: 720px) {
-  
+
 }
