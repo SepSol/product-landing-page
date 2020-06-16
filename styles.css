@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url(assets/fonts/RobotoCondensed-Regular.ttf)
+  src: url(assets/fonts/RobotoCondensed-Regular.ttf)ک
 }
 
 body {
@@ -87,7 +87,7 @@ header .dropdown-menu input:checked ~ label {
 }
 
 header .dropdown-menu input[type="checkbox"] {
-  display: none;;
+  display: none;
 }
 
 header .dropdown-menu input:checked ~ #nav-bar {
@@ -142,6 +142,11 @@ header .dropdown-menu > a:hover {
 
 main {
   padding-top: 130px;
+}
+
+main *::selection {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 main .welcome-text * {
@@ -338,7 +343,7 @@ footer {
     top: 70px;
   }
   main .welcome-badges {
-    width: 400px;
+  width: 400px;
   }
 }
 
@@ -383,5 +388,112 @@ footer {
 }
 
 @media screen and (min-width: 720px) {
+  header .dropdown-menu {
+    display: flex;
+    padding: 0 15px;
+    margin-top: 82px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .dropdown-menu label {
+    display: none;
+  }
+  header .dropdown-menu #nav-bar {
+    height: 100%;
+  }
+  header .dropdown-menu #nav-bar ul {
+    display: flex;
+    margin: 0;
+  }
+  header .dropdown-menu #nav-bar ul li a {
+    border-top: none;
+  }
+  header .dropdown-menu > a {
+    top: 93px;
+  }
+}
 
+@media screen and (min-width: 840px) {
+  header #product-info img {
+    width: 35%;
+  }
+  header .dropdown-menu {
+    margin-top: 76px;
+  }
+  header .dropdown-menu > a {
+    top: 88px;
+  }
+  main #product-features div {
+    margin-left: 15%;
+  }
+  main #gallery img {
+    width: 30%
+  }
+  main #product-warranty img {
+    width: 60%;
+  }
+  aside form {
+    padding: 0 150px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #to-top {
+    display: none;
+  }
+  header {
+    position: fixed;
+  }
+  header #product-info {
+    position: static;
+  }
+  header #product-info img {
+    width: auto;
+    height: 8vh;
+  }
+  header .dropdown-menu {
+    margin-top: 0;
+  }
+  header .dropdown-menu > a {
+    position: static;
+  }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  main .welcome-text {
+    font-size: 20px;
+  }
+  main #product-introduction > div.intro-image > img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  main #product-features .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main #product-features .container div {
+    flex-direction: column;
+    margin: 40px 0 0;
+    width: 30%;
+  }
+  main #product-features .container div img {
+    margin: 0;
+    width: 35%;
+  }
+  main #product-features .container div h3{
+    text-align: center;
+  }
+  main #product-features .container div:nth-child(4) {
+    margin-left: 15%;
+  }
+  main #product-snapshot .table {
+    overflow: auto;
+  }
+  aside form {
+    width: 600px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
